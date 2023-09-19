@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
+  "engines": {
+    "node":"18.x"
+  },
   "scripts": {
     "dev": "nodemon -r esm server.js",
     "start": "node -r esm server.js"
