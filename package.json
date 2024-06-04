@@ -4,11 +4,12 @@
   "description": "",
   "main": "server.js",
   "engines": {
-    "node":"18.x"
+    "node": "18.x"
   },
   "scripts": {
     "dev": "nodemon -r esm server.js",
-    "start": "node -r esm server.js"
+    "start": "node -r esm server.js",
+    "docker:publish": "docker build -t skshoyebdev/chatappbackend:v2 --platform linux/amd64 . && docker push skshoyebdev/chatappbackend:v2"
   },
   "author": "",
   "license": "ISC",
